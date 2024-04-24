@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Buckshot Double Roulette</title>
+	</head>
+	
+	<body>
+	
+	
+	<body background="C:\Users\Samuel\Desktop\Buckshot double roulette\background 2.jpg">
+	<body style = "background-size: cover";</body>
+	<p align="center"><img src="C:\Users\Samuel\Desktop\Buckshot double roulette\title 2.png" width="900"></p>
+	  
+	  <p align="center"><button onclick="randomizeTask1();randomizeTask2();randomizeTask3()">Spin the Rulette</button><font color="white" size="5" </font></p>
+  <p align="middle" id="TaskOne"></p><font color="white" size="5" </font></p>
+  <p align="middle" id="TaskTwo"></p><font color="white" size="5" </font></p>
+  <p align="middle" id="TaskThree"></p><font color="white" size="5" </font></p>
+  </a>
+  
+<br>
+
+<script>
+const Task1 = 
+["Burner phone is banned",
+ "Expired medicine is banned",
+ "Adrenaline is banned",
+ "Inverter is banned"];
+
+randomizeTask1()
+
+function randomizeTask1() {
+    document.getElementById("TaskOne").innerHTML = Task1[Math.floor(Math.random() * Task1.length)]
+}
+</script>
+
+<script>
+const Task2 = 
+["Cigarette Pack is banned",
+ "Handsaw is banned",
+ "Shoot first at yourself after every load",
+ "Shoot first at the Dealer after every load",];
+
+randomizeTask2()
+
+function randomizeTask2() {
+    document.getElementById("TaskTwo").innerHTML = Task2[Math.floor(Math.random() * Task2.length)]
+}
+</script>
+
+<script>
+const Task3 = 
+["Magnifying Glass is banned",
+ "Handcuffs are banned",
+ "Beer is banned",
+ "Shoot the last round at yourself before a new load",
+ "Shoot the last round at the Dealer before every new load",];
+
+randomizeTask3()
+
+function randomizeTask3() {
+    document.getElementById("TaskThree").innerHTML = Task3[Math.floor(Math.random() * Task3.length)]
+}
+</script>
+
+	</body>
